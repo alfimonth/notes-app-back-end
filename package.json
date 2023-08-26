@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/server.js",
-    "lint": "eslint ./src"
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,10 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.0",
+    "dotenv": "^16.3.1",
     "joi": "^17.9.2",
-    "nanoid": "^3.3.4"
+    "nanoid": "^3.3.4",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.11.3"
   }
 }
