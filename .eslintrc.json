@@ -12,7 +12,10 @@
 	},
 	"rules": {
 		"no-console": "off",
-		"linebreak-style": ["error", "windows"]
+		"linebreak-style": ["error", "windows"],
+		"import/no-extraneous-dependencies": 0,
+		"no-underscore-dangle": 0,
+		"import/no-unresolved": 0,
+		"import/extensions": 0
 	}
 }
-
